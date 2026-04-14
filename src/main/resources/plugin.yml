@@ -1,0 +1,12 @@
+name: GetServerStatus
+version: '1.0'
+main: net.point7845.getServerStatus.GetServerStatus
+api-version: '1.18'
+authors:
+  - point
+  - rakku
+depend:
+  - DiscordSRV
+  - spark
+loadbefore:
+  - DiscordSRV
