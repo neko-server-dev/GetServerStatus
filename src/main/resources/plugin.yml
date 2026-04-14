@@ -1,5 +1,5 @@
 name: GetServerStatus
-version: '1.0'
+version: ${version}
 main: net.point7845.getServerStatus.GetServerStatus
 api-version: '1.18'
 authors:
