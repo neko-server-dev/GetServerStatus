@@ -24,6 +24,11 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Set version from tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          sed -i "s/^version = .*/version = '${VERSION}'/" build.gradle
+
       - name: Build with Gradle
         run: ./gradlew build
 
